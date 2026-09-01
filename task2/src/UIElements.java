@@ -10,7 +10,5 @@ public abstract class UIElements {
         this.text = text;
     }
 
-    public String getText() { return text; }
-
     public abstract void display();
 }
