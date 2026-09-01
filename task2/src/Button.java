@@ -1,12 +1,27 @@
-public abstract class Button {
-    protected String text;
+public abstract class Button extends UIElements {
     public Button(String text) {
-        this.text = text;
+        super(text);
+    }
+}
+
+class ButtonA extends Button{
+    public ButtonA(String text) {
+        super(text);
     }
 
-    public void setText(String text) {
-        this.text = text;
+    @Override
+    public void display() {
+        System.out.println("Button A: " + text);
+    }
+}
+
+class ButtonB extends Button{
+    public ButtonB(String text) {
+        super(text);
     }
 
-    public abstract void display();
+    @Override
+    public void display() {
+        System.out.println("Button B: " + text);
+    }
 }

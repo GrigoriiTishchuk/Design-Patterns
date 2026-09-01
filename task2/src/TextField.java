@@ -1,13 +1,27 @@
-public abstract class TextField {
-    protected String text;
-
+public abstract class TextField extends UIElements{
     public TextField(String text) {
-        this.text = text;
+        super(text);
+    }
+}
+
+class TextFieldA extends TextField{
+    public TextFieldA(String text) {
+        super(text);
     }
 
-    public void setText(String text) {
-        this.text = text;
+    @Override
+    public void display() {
+        System.out.println("TextField A: " + text);
+    }
+}
+
+class TextFieldB extends TextField{
+    public TextFieldB(String text) {
+        super(text);
     }
 
-    public abstract void display();
+    @Override
+    public void display() {
+        System.out.println("TextField B: " + text);
+    }
 }

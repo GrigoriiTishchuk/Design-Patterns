@@ -1,13 +1,27 @@
-public abstract class Checkbox {
-    protected String text;
-
+public abstract class Checkbox extends UIElements{
     public Checkbox(String text) {
-        this.text = text;
+        super(text);
+    }
+}
+
+class CheckboxA extends Checkbox{
+    public CheckboxA(String text) {
+        super(text);
     }
 
-    public void setText(String text) {
-        this.text = text;
+    @Override
+    public void display() {
+        System.out.println("Checkbox A: " + text);
+    }
+}
+
+class CheckboxB extends Checkbox{
+    public CheckboxB(String text) {
+        super(text);
     }
 
-    public abstract void display();
+    @Override
+    public void display() {
+        System.out.println("Checkbox B: " + text);
+    }
 }
