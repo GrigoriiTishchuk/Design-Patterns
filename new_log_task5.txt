@@ -1,0 +1,2 @@
+This is a log message in the new log file.
+Application finished.
