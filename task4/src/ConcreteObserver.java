@@ -10,6 +10,6 @@ public class ConcreteObserver implements WeatherObserver {
 
     @Override
     public void update(int temperature) {
-        System.out.println("Observer " + name + " received update: " + message + " Current temperature: " + temperature);
+        System.out.println(name + " received update: " + message + " Current temperature: " + temperature);
     }
 }
