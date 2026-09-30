@@ -6,7 +6,6 @@ import java.nio.file.*;
 public class Logger {
     private static Logger instance;
     private String logFile = "log_task5.txt";
-
     private Logger() {}
 
     public static synchronized Logger getInstance() {
@@ -19,7 +18,6 @@ public class Logger {
     public synchronized void setFileName(String logFile) {
         this.logFile = logFile;
     }
-
     public synchronized void write(String message) {
         try {
             Files.writeString(Path.of(logFile), message + "\n",
