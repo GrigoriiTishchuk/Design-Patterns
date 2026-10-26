@@ -1,6 +1,5 @@
 public abstract class FeedbackHandler {
     private FeedbackHandler nextHandler;
-
     public FeedbackHandler setNextHandler(FeedbackHandler nextHandler)
     {
         this.nextHandler = nextHandler;
