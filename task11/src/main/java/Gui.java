@@ -10,7 +10,6 @@ import javafx.geometry.Insets;
 import javafx.scene.input.KeyCode;
 
 public class Gui extends Application {
-
     private Controller controller;
     private ColorBox colorBox1;
     private ColorBox colorBox2;
