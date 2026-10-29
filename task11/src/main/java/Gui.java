@@ -68,7 +68,6 @@ public class Gui extends Application {
     private void createHistoryWindow() {
         Stage historyStage = new Stage();
         historyStage.setTitle("State History Window");
-
         historyListView = new ListView<>(controller.getHistory());
         historyListView.setOnMouseClicked(event -> {
             IMemento selectedMemento = historyListView.getSelectionModel().getSelectedItem();

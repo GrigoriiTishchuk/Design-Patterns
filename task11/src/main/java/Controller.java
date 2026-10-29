@@ -6,8 +6,8 @@ import javafx.collections.ObservableList;
 public class Controller {
     private Model model;
     private Gui gui;
-    private ObservableList<IMemento> history; // Memento history
-    private List<IMemento> redoList;          // Redo history
+    private ObservableList<IMemento> history;
+    private List<IMemento> redoList;
 
     public Controller(Gui gui) {
         this.model = new Model();
