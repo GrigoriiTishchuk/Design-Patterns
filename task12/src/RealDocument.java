@@ -23,7 +23,6 @@ public class RealDocument implements Document {
 
     @Override
     public String getContent(User user) {
-        // In a real implementation, you might check the user's permissions here
         return content;
     }
 }
